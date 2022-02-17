@@ -48,7 +48,7 @@ document.getElementById('calcBtn').addEventListener('click', function(){
     }else{
         document.getElementById('totalexpence').innerText = totalExpence;
         if (remainingBalance < 0) {
-            document.getElementById('remainingBalance').innerText = "You can't spent more them you income";
+            document.getElementById('remainingBalance').innerText = "You can't spent more then you income";
             document.getElementById('remainingBalance').style.color = "red";
         } else {
             document.getElementById('remainingBalance').innerText = remainingBalance;
@@ -82,14 +82,14 @@ document.getElementById('saveBtn').addEventListener('click', function () {
     }else{
         
         if (savings > incomeAmount) {
-            document.getElementById('savingAmount').innerText = "You can't save more them you income";
+            document.getElementById('savingAmount').innerText = "You can't save more then you income";
             document.getElementById('savingAmount').style.color = "red";
         } else {
             document.getElementById('savingAmount').innerText= savings;
             document.getElementById('savingAmount').style.color = "green";
         }
         if (totalremaining < 0) {
-            document.getElementById('remaining').innerText = "You can't save more them you income";
+            document.getElementById('remaining').innerText = "You can't save more then you have";
             document.getElementById('remaining').style.color = "red";
         } else {
             document.getElementById('remaining').innerText = totalremaining;
