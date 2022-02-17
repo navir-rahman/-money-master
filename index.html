@@ -19,38 +19,59 @@
 
     <main>
         <section>
-            <div class="container p-4 mx-auto">
-                <div class="columns-2">
-                    <div class="img_container">
-                        <img src="asset/svg/gross-salary-image.svg" alt="">
+            <div class="container p-4 mx-auto"> 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- image area  -->
+                    <div class="img_container p-4">
+                        <img src="asset/svg/27832515.jpg" alt="">
                     </div>
                     <!-- calculation area  -->
-                    <div class="">
+                    <div class="mx-auto text-center bg-gray-100 p-4 w-full">
                        <!-- income  -->
                        <div class="income">
                             <h2 class="text-center text-3xl font-bold capitalize text-amber-400 py-6 font-mono">Income</h2>
                             <label for="income" class=""> Income</label>
-                            <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                            <input value="10000" id="income" type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
                        </div>
                        <!-- Expenses -->
+                       <div class="">
                             <h2 class="text-center text-3xl font-bold capitalize text-amber-400 py-6 font-mono">Expenses</h2>
                             <!-- Food -->
                             <div class="pb-2">
-                                <label for="income" class=""> Food</label>
-                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                                <label for="Food" class=""> Food</label>
+                                <input value="3000" id="Food" type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
                             </div>
 
                             <!-- Rent -->
                             <div class="pb-2">
-                                <label for="income" class=""> Food</label>
-                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                                <label for="Rent" class=""> Rent</label>
+                                <input value="2000" id='Rent' type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
                             </div>
                             
                             <!-- Clothes -->
                             <div class="pb-2">
-                                <label for="income" class=""> Food</label>
-                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                                <label for="Clothes" class=""> Clothes</label>
+                                <input value="500" id="Clothes" type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
                             </div>
+                       </div>
+
+                       
+                       <button id="calcBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded">Calculate</button>
+                       <h2 class="text-center text-2xl capitalize text-black-400 pb-2 font-mono">Total Expenses: <span id="totalexpence">5500</span></h2>
+                       <h2 class="text-center text-2xl capitalize text-black-400 pb-2 font-mono">Balance: <span id="remainingBalance">4500</span></h2>
+
+                       <!-- save  -->
+                       <div class="grid-rows-1">
+                            <label for="income" class=""> Food</label>
+                            <input value="20" id="savingPercent" type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                            <span>%</span>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded" id="saveBtn">Save</button>
+                       </div>
+
+                       <!-- save calculation  -->
+                       <h2 class="text-center text-2xl capitalize text-black-400 pb-2 font-mono">Saving Amount: <span id="savingAmount">2000</span></h2>
+                       <h2 class="text-center text-2xl capitalize text-black-400 pb-2 font-mono">Remaining Balance: <span id="remaining">2500</span></h2>
+
                     </div>
                 </div>
 
