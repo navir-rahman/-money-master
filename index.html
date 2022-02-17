@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>income calculator</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/mainCss.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body>
-    
+    <!-- header  -->
+    <header>
+        <h1 class="text-center text-5xl font-bold capitalize text-indigo-400 py-6 font-mono">income calculator</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="container p-4 mx-auto">
+                <div class="columns-2">
+                    <div class="img_container">
+                        <img src="asset/svg/gross-salary-image.svg" alt="">
+                    </div>
+                    <!-- calculation area  -->
+                    <div class="">
+                       <!-- income  -->
+                       <div class="income">
+                            <h2 class="text-center text-3xl font-bold capitalize text-amber-400 py-6 font-mono">Income</h2>
+                            <label for="income" class=""> Income</label>
+                            <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                       </div>
+                       <!-- Expenses -->
+                            <h2 class="text-center text-3xl font-bold capitalize text-amber-400 py-6 font-mono">Expenses</h2>
+                            <!-- Food -->
+                            <div class="pb-2">
+                                <label for="income" class=""> Food</label>
+                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                            </div>
+
+                            <!-- Rent -->
+                            <div class="pb-2">
+                                <label for="income" class=""> Food</label>
+                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                            </div>
+                            
+                            <!-- Clothes -->
+                            <div class="pb-2">
+                                <label for="income" class=""> Food</label>
+                                <input type="text" class="bg hover:bg-indigo-100 focus:bg-indigo-300 border-2 border-indigo-200 ">
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- js -->
+    <script src="js/mainJs.js"></script>
 </body>
 </html>
